@@ -7,18 +7,31 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/quiz1"
+    android:background="@drawable/landing_screen"
     tools:context="com.example.happybirthday.MainActivity">
 
     <TextView
         android:id="@+id/tv_app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
-        android:text="QuizWhiz!"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:text="QuizWhiz"
+        android:textColor="#DFDF1B"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Find out your soul element!"
+        android:textColor="#DFDF1B"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
@@ -27,7 +40,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@android:color/white"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="18dp"
         app:cardElevation="5dp"
         >
 
@@ -36,17 +49,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="Welcome!"
                 android:textSize="30sp"
                 android:textStyle="bold">
 
+            </TextView>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
                 android:gravity="center"
                 android:text="Please enter your name:"
                 android:textSize="16sp"
@@ -61,11 +79,12 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
                     android:textColor="#A9A9A9"
-                    android:textColorHint="A9A9A9"
+                    android:textColorHint="#A9A9A9"
                     android:textAlignment="center"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -76,7 +95,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:background="@color/purple_500"
-                android:text="Proceed to Game">
+                android:fontFamily="@font/montserrat"
+                android:text="Proceed to Game"
+                android:textColor="#DFDF1B"
+                android:textSize="14sp"
+                android:textStyle="bold">
 
             </Button>
 
